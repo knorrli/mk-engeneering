@@ -1,4 +1,4 @@
 mk-engeneering
 ==============
 
-simple website
+Website for mk-engeneering, sample build.
