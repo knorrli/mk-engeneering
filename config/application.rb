@@ -38,6 +38,11 @@ module MkEngeneering
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    # Set default template engine to haml
+    config.generators do |g|
+      g.template_engine :haml
+    end
 
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
