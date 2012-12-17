@@ -15,7 +15,11 @@ MkEngeneering::Application.routes.draw do
   
   root :to => 'pages#index'
   
-  resources :pages
+  resources :pages do
+    collection do
+      get :contact
+    end
+  end
 
   # Sample resource route with options:
   #   resources :products do
